@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulário de Preferências</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 450px;
+      background-color: #fff;
+      margin: auto;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .checkbox-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: normal;
+    }
+
+    select,
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    select:invalid {
+      color: #777;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    @media (max-width: 480px) {
+      form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulário de Preferências</h2>
+
+  <form action="#" method="post">
+    <label>Escolha suas cores favoritas:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="cores" value="azul"> Azul</label>
+      <label><input type="checkbox" name="cores" value="verde"> Verde</label>
+      <label><input type="checkbox" name="cores" value="vermelho"> Vermelho</label>
+    </div>
+
+    <label for="linguagem">Qual é a sua linguagem de programação favorita?</label>
+    <select id="linguagem" name="linguagem" required>
+      <option value="" disabled selected hidden>Selecione uma linguagem</option>
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+    </select>
+
+    <label for="trabalho">Você prefere trabalhar em equipe ou sozinho?</label>
+    <select id="trabalho" name="trabalho" required>
+      <option value="" disabled selected hidden>Selecione uma opção</option>
+      <option value="equipe">Em equipe</option>
+      <option value="sozinho">Sozinho</option>
+    </select>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+</body>
+</html>
+
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .radio-group, .checkbox-group, .address-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-group label, .checkbox-group label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .address-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .address-group input {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Pedido de Pizza</h2>
+
+<form action="#" method="post">
+    <label for="tamanho">Tamanho da Pizza:</label>
+    <div class="radio-group">
+        <label><input type="radio" id="pequena" name="tamanho" value="pequena" required> Pequena</label>
+        <label><input type="radio" id="media" name="tamanho" value="media" required> Média</label>
+        <label><input type="radio" id="grande" name="tamanho" value="grande" required> Grande</label>
+    </div>
+
+    <label for="coberturas">Coberturas:</label>
+    <div class="checkbox-group">
+        <label><input type="checkbox" name="coberturas" value="queijo"> Queijo</label>
+        <label><input type="checkbox" name="coberturas" value="pepperoni"> Pepperoni</label>
+        <label><input type="checkbox" name="coberturas" value="frango"> Frango</label>
+        <label><input type="checkbox" name="coberturas" value="bacon"> Bacon</label>
+        <label><input type="checkbox" name="coberturas" value="tomate"> Tomate</label>
+        <label><input type="checkbox" name="coberturas" value="azeitona"> Azeitona</label>
+    </div>
+
+    <label for="massa">Tipo de Massa:</label>
+    <select id="massa" name="massa" required>
+        <option value="fina">Massa Fina</option>
+        <option value="grossa">Massa Grossa</option>
+        <option value="integral">Massa Integral</option>
+    </select>
+
+    <label>Informações de Entrega:</label>
+    <div class="address-group">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required>
+    </div>
+
+    <input type="submit" value="Fazer Pedido">
+</form>
+
+</body>
+</html>
+
+
+

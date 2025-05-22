@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Centralizado</title>
+</head>
+<body>
+  <table border="1" width="100%" height="500">
+    <tr>
+      <td></td>
+      <td align="left" valign="top">
+        <form>
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+            <table>
+              <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="nome" size="30"></td>
+              </tr>
+              <tr>
+                <td>Endereço:</td>
+                <td><input type="text" name="endereco" size="30"></td>
+              </tr>
+              <tr>
+                <td>Bairro:</td>
+                <td><input type="text" name="bairro" size="30"></td>
+              </tr>
+              <tr>
+                <td>Município:</td>
+                <td><input type="text" name="municipio" size="30"></td>
+              </tr>
+              <tr>
+                <td>Estado (UF):</td>
+                <td>
+                  <select name="estado">
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>BA</option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>CEP:</td>
+                <td><input type="text" name="cep"></td>
+              </tr>
+              <tr>
+                <td>Complemento:</td>
+                <td><textarea name="complemento" cols="30" rows="3"></textarea></td>
+              </tr>
+            </table>
+          </fieldset>
+
+          <br>
+
+          <fieldset>
+            <legend>Escolha a disciplina:</legend>
+            <input type="checkbox" name="disciplina" value="Mat"> Matemática<br>
+            <input type="checkbox" name="disciplina" value="Port"> Português<br>
+            <input type="checkbox" name="disciplina" value="Hist"> História<br>
+            <input type="checkbox" name="disciplina" value="Geo"> Geografia<br>
+            <input type="checkbox" name="disciplina" value="Cien"> Ciências<br>
+          </fieldset>
+
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>
+</html>
